@@ -1,0 +1,27 @@
+{
+    "name": "nullsec/php_unit_test",
+    "description": "Belajar PHP Unit Test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "NUllsec",
+            "email": "nullsec@linux-nf.org"
+        }
+    ],
+    "require": {
+        "php":">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit":"9.5.5"
+    },
+    "autoload": {
+        "psr-4":{
+            "Program\\Script\\":"src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4":{
+            "Testing\\Test\\":"tests"
+        }
+    }
+}
