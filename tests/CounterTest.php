@@ -104,4 +104,11 @@ class CounterTest extends TestCase{
         self::assertTrue(true, "Only for PHP 7");
      }
 
+    /**
+     * @requires PHP >= 8
+     * @requires OSFAMILY windows
+     */
+    public function testOnlyWindowAndPHP8(){
+        self::assertTrue(true, "Only Windows and PHP8");
+    }
 }
