@@ -70,7 +70,7 @@ class ProductServiceTest extends TestCase{
     }
 
     public function testRegisterException(){
-        // $this->expectException(\Exception::class);
+        $this->expectException(\Exception::class);
 
         $productInDB=new Product();
         $productInDB->setId("1");

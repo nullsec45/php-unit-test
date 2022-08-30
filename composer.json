@@ -23,5 +23,10 @@
         "psr-4":{
             "Testing\\Test\\":"tests"
         }
+    },
+    "scripts": {
+        "test":"phpunit --configuration phpunit.xml --filter 'ProductServiceMockTest::testDeleteException'",
+        "test_product":"phpunit --configuration phpunit.xml --testsuite product",
+        "test_counter":"phpunit --configuration phpunit.xml --testsuite counter"
     }
 }
