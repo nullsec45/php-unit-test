@@ -84,6 +84,7 @@ class ProductServiceTest extends TestCase{
     }
     
     public function testDeleteSuccess(){
+    
         $product=new Product();
         $product->setId("1");
 
@@ -94,7 +95,7 @@ class ProductServiceTest extends TestCase{
     }
 
     public function testDeleteException(){
-        // $this->expectException(\Exception::class);
+        $this->expectException(\Exception::class);
         $this->repository->method("findById")->willReturn(null);
 
         $this->service->delete("1");
