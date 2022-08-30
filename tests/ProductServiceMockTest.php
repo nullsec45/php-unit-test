@@ -1,10 +1,12 @@
 <?php
 
-namespace Program\Script;
+namespace Testing\Test;
+use Program\Script\{ProductRepository, ProductService, Product};
+
 
 use PHPUnit\Framework\TestCase;
 
-class ProductServiceTest extends TestCase{
+class ProductServiceMockTest extends TestCase{
     private ProductRepository $repository;
     private ProductService $service;
 
