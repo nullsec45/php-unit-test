@@ -17,9 +17,9 @@ class ProductServiceTest extends TestCase{
         $product=new Product();
         $product->setId("1");
 
-        $this->repository->excepts(self::once())
+        $this->repository->expects(self::once())
              ->method("findById")
-             ->willReturn($product)
+             ->willReturn($product);
         $result=$this->repository->findById("1");
         self::assertSame($product, $result);
     }
